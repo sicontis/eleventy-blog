@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogus | Home</title>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <link rel="stylesheet" href="/main.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -31,6 +34,13 @@
         <a href="/posts/article-two/">Read more</a>
     </li>
     
+    <li>
+        <h3>Clean Code Javascript</h3>
+        <p><small>June 30, 2021</small></p>
+        <p>Our craft of software engineering is just a bit over 50 years old, and we are still learning a lot.</p>
+        <a href="/posts/article-three/">Read more</a>
+    </li>
+    
 </ul>
 
 
@@ -40,5 +50,18 @@
     <p>@Blogus 2021. All rights reserved</p>
 </footer>
     </div>
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
 </body>
+
 </html>

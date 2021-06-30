@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogus | Clean Code Javascript</title>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+    <h1>Blogass</h1>
+    <h4>A front-end developers musings</h4>
+</header>
+        <section>
+            
+<article>
+    <h1>Clean Code Javascript</h1>
+    <p class="byline">By <strong>Alexandre Freire</strong> on June 30, 2021</p>
+    <p><p>Software engineering principles, from Robert C. Martin's book Clean Code, adapted for JavaScript. This is not a style guide. It's a guide to producing readable, reusable, and refactorable software in JavaScript.</p>
+<p>Not every principle herein has to be strictly followed, and even fewer will be universally agreed upon. These are guidelines and nothing more, but they are ones codified over many years of collective experience by the authors of Clean Code.</p>
+<p>Our craft of software engineering is just a bit over 50 years old, and we are still learning a lot. When software architecture is as old as architecture itself, maybe then we will have harder rules to follow. For now, let these guidelines serve as a touchstone by which to assess the quality of the JavaScript code that you and your team produce.</p>
+</p>
+</article>
+        </section>
+        <footer>
+    <p>@Blogus 2021. All rights reserved</p>
+</footer>
+    </div>
+
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
