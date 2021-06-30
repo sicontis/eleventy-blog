@@ -1,0 +1,9 @@
+---
+layout: "base.njk"
+---
+
+<article>
+    <h1>{{ title }}</h1>
+    <p class="byline">By <strong>{{ author }}</strong> on {{ posted | formatDate }}</p>
+    <p>{{ content | safe }}</p>
+</article>

@@ -1,0 +1,17 @@
+---
+title: Home
+layout: "base.njk"
+---
+
+<ul>
+    {% for post in collections.posts %}
+    <li>
+        <h3>{{ post.data.title }}</h3>
+        <p><small>{{ post.data.posted | formatDate }}</small></p>
+        <p>{{ post.data.excerpt }}</p>
+        <a href="{{ post.url }}">Read more</a>
+    </li>
+    {% endfor %}
+</ul>
+
+
